@@ -17,6 +17,11 @@ class smarty_tpl extends Smarty {
         $this->cache_dir=       APPPATH."views/cache";
         //config folder
         $this->config_dir=      APPPATH."views/config";
+	//plugins folder
+	$this->plugins_dir = array(
+		"/usr/share/php/Smarty3/plugins/",
+		"/usr/share/php/Smarty3/sysplugins/"
+	);
 
         // template recheck on
         $this->compile_check=   true;
