@@ -10,18 +10,18 @@ class smarty_tpl extends Smarty {
     function smarty_tpl() {
         $this->Smarty();
         // templates folder
-        $this->template_dir=    APPPATH."views/templates";
+        $this->setTemplateDir(APPPATH."views/templates");
         // compiled templates folder
-        $this->compile_dir=     APPPATH."views/templates_c";
+	$this->setCompileDir(APPPATH."views/templates_c");
         // cache folder
-        $this->cache_dir=       APPPATH."views/cache";
+        $this->setCacheDir(APPPATH."views/cache");
         //config folder
-        $this->config_dir=      APPPATH."views/config";
+        $this->setConfigDir(APPPATH."views/config");
 	//plugins folder
-	$this->plugins_dir = array(
+	$this->setPluginsDir(array(
 		"/usr/share/php/Smarty3/plugins/",
 		"/usr/share/php/Smarty3/sysplugins/"
-	);
+	));
 
         // template recheck on
         $this->compile_check=   true;
