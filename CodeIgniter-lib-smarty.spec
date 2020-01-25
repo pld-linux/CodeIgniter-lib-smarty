@@ -1,6 +1,5 @@
 %define		php_min_version 5.2.4
 %define		shortname	smarty
-%include	/usr/lib/rpm/macros.php
 Summary:	Use smarty template engine in CodeIgniter
 Name:		CodeIgniter-lib-%{shortname}
 Version:	2
